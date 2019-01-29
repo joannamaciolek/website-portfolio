@@ -247,7 +247,7 @@ input#submit__button {
 
 .social-logos {
   width: 32px;
-  height:auto;
+  height: auto;
   margin-top: 5px;
 }
 
@@ -269,7 +269,7 @@ input#submit__button {
 }
 
 .project-list__item:last-child {
-background-color:#FFEBCD;
+  background-color: #FFEBCD;
 }
 
 /*==========================
