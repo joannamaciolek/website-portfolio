@@ -1,11 +1,11 @@
 :root {
-  --primary-bg-color: #3CE3EB;
-  --button-color: #F6AC85;
+  --primary-bg-color: #3ce3eb;
+  --button-color: #f6ac85;
   --black: #000;
   --white: #fff;
-  --selected-link: #EEA280;
-  --lightgrey: #A9A9A9;
-  --light-yellow:#FFEBCD;
+  --selected-link: #eea280;
+  --lightgrey: #a9a9a9;
+  --light-yellow: #ffebcd;
   --main-font-weight: 700;
 }
 
@@ -45,7 +45,8 @@ a:visited {
   color: var(--white);
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   /* No underlining when hovering over a link */
   text-decoration: none;
 }
@@ -68,15 +69,19 @@ a.button,
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
+
   /* takes the font from the outer container */
   font-family: inherit;
+
   /* styles the button */
   background-color: var(--button-color);
   color: var(--white);
   text-decoration: none;
-  /*adds spacing to the button; this will be discussed more in-depth later */
+
+  /* adds spacing to the button; this will be discussed more in-depth later */
   padding: 10px;
   border-radius: 5px;
+
   /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: background-color 0.5s;
@@ -130,7 +135,7 @@ a.button,
   text-align: center;
   border: 1px solid var(--white);
   width: 500px;
-  margin: 10px 10px;
+  margin: 10px;
 }
 
 .about__table__head {
@@ -179,11 +184,10 @@ input#submit__button {
   margin: 5px;
   font-family: inherit;
   font-size: 100%;
-  background-color: #F6AC85;
+  background-color: #f6ac85;
   color: #fff;
   text-decoration: none;
   padding: 10px;
-  border-radius: 5px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
@@ -226,7 +230,7 @@ input#submit__button {
 
 .social-logos {
   width: 32px;
-  height:auto;
+  height: auto;
   margin-top: 5px;
 }
 
@@ -248,19 +252,19 @@ input#submit__button {
 }
 
 .project-list__item:last-child {
-background-color:var(--light-yellow);
+  background-color: var(--light-yellow);
 }
 
-/*==========================
+/* ==========================
          ANIMATIONS
  =========================== */
 @keyframes cloud-move1 {
   from {
-    transform: translate(0, 0px);
+    transform: translate(0, 0);
   }
 
   to {
-    transform: translate(100px, 0px);
+    transform: translate(100px, 0);
   }
 }
 
@@ -270,11 +274,11 @@ background-color:var(--light-yellow);
 
 @keyframes cloud-move-reverse {
   from {
-    transform: translate(0px, 0px);
+    transform: translate(0, 0);
   }
 
   to {
-    transform: translate(-40px, 0px);
+    transform: translate(-40px, 0);
   }
 }
 
@@ -284,11 +288,11 @@ background-color:var(--light-yellow);
 
 @keyframes cloud-move3 {
   from {
-    transform: translate(0px, 0px);
+    transform: translate(0, 0);
   }
 
   to {
-    transform: translate(75px, 0px);
+    transform: translate(75px, 0);
   }
 }
 
@@ -298,11 +302,11 @@ background-color:var(--light-yellow);
 
 @keyframes plane-move {
   from {
-    transform: translate(-300px, 0px);
+    transform: translate(-300px, 0);
   }
 
   to {
-    transform: translate(0px, 0px);
+    transform: translate(0, 0);
   }
 }
 
@@ -310,7 +314,8 @@ background-color:var(--light-yellow);
   animation: 5s plane-move infinite normal ease-in;
 }
 
-.navigation-list__item:before, .navigation-list__item:after {
+.navigation-list__item::before,
+.navigation-list__item::after {
   position: absolute;
   top: 22px;
   left: 50%;
@@ -326,22 +331,22 @@ background-color:var(--light-yellow);
   z-index: -1;
 }
 
-.navigation-list__item:after {
+.navigation-list__item::after {
   border-width: 2px;
   transition: all 0.4s;
 }
 
-.navigation-list__item :hover:before {
+.navigation-list__item :hover::before {
   opacity: 0.7;
   transform: translateX(-50%) translateY(-50%) scale(1);
 }
 
-.navigation-list__item:hover:after {
+.navigation-list__item:hover::after {
   opacity: 0.7;
   transform: translateX(-50%) translateY(-50%) scale(1.4);
 }
 
-/*==========================
+/* ==========================
       MEDIA QUERIES
  =========================== */
 @media all and (max-width: 500px) {

@@ -1,5 +1,5 @@
 body {
-  background-color: #3CE3EB;
+  background-color: #3ce3eb;
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
 }
@@ -34,14 +34,15 @@ a:visited {
   color: #fff;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   /* No underlining when hovering over a link */
   text-decoration: none;
 }
 
 a:active {
   /* selected link */
-  color: #EEA280;
+  color: #eea280;
 }
 
 a.navigation-list__item {
@@ -56,15 +57,19 @@ a.button {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
+
   /* takes the font from the outer container */
   font-family: inherit;
+
   /* styles the button */
-  background-color: #F6AC85;
+  background-color: #f6ac85;
   color: #fff;
   text-decoration: none;
-  /*adds spacing to the button; this will be discussed more in-depth later */
+
+  /* adds spacing to the button; this will be discussed more in-depth later */
   padding: 10px;
   border-radius: 5px;
+
   /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: background-color 0.5s;
@@ -74,15 +79,19 @@ a.button {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
+
   /* takes the font from the outer container */
   font-family: inherit;
+
   /* styles the button */
-  background-color: #F6AC85;
+  background-color: #f6ac85;
   color: #fff;
   text-decoration: none;
-  /*adds spacing to the button; this will be discussed more in-depth later */
+
+  /* adds spacing to the button; this will be discussed more in-depth later */
   padding: 10px;
   border-radius: 5px;
+
   /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: background-color 0.5s;
@@ -151,7 +160,7 @@ a.button {
   text-align: center;
   border: 1px solid #fff;
   width: 500px;
-  margin: 10px 10px;
+  margin: 10px;
 }
 
 .about__table__head {
@@ -175,7 +184,7 @@ img.page-header__item {
 }
 
 .navigation-list {
-  background-color: #3CE3EB;
+  background-color: #3ce3eb;
   color: #fff;
   list-style-type: none;
 }
@@ -200,11 +209,10 @@ input#submit__button {
   margin: 5px;
   font-family: inherit;
   font-size: 100%;
-  background-color: #F6AC85;
+  background-color: #f6ac85;
   color: #fff;
   text-decoration: none;
   padding: 10px;
-  border-radius: 5px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
@@ -269,19 +277,19 @@ input#submit__button {
 }
 
 .project-list__item:last-child {
-  background-color: #FFEBCD;
+  background-color: #ffebcd;
 }
 
-/*==========================
+/* ==========================
          ANIMATIONS
  =========================== */
 @keyframes cloud-move1 {
   from {
-    transform: translate(0, 0px);
+    transform: translate(0, 0);
   }
 
   to {
-    transform: translate(100px, 0px);
+    transform: translate(100px, 0);
   }
 }
 
@@ -291,11 +299,11 @@ input#submit__button {
 
 @keyframes cloud-move-reverse {
   from {
-    transform: translate(0px, 0px);
+    transform: translate(0, 0);
   }
 
   to {
-    transform: translate(-40px, 0px);
+    transform: translate(-40px, 0);
   }
 }
 
@@ -305,11 +313,11 @@ input#submit__button {
 
 @keyframes cloud-move3 {
   from {
-    transform: translate(0px, 0px);
+    transform: translate(0, 0);
   }
 
   to {
-    transform: translate(75px, 0px);
+    transform: translate(75px, 0);
   }
 }
 
@@ -319,11 +327,11 @@ input#submit__button {
 
 @keyframes plane-move {
   from {
-    transform: translate(-300px, 0px);
+    transform: translate(-300px, 0);
   }
 
   to {
-    transform: translate(0px, 0px);
+    transform: translate(0, 0);
   }
 }
 
@@ -331,7 +339,8 @@ input#submit__button {
   animation: 5s plane-move infinite normal ease-in;
 }
 
-.navigation-list__item:before, .navigation-list__item:after {
+.navigation-list__item::before,
+.navigation-list__item::after {
   position: absolute;
   top: 22px;
   left: 50%;
@@ -347,22 +356,22 @@ input#submit__button {
   z-index: -1;
 }
 
-.navigation-list__item:after {
+.navigation-list__item::after {
   border-width: 2px;
   transition: all 0.4s;
 }
 
-.navigation-list__item :hover:before {
+.navigation-list__item :hover::before {
   opacity: 0.7;
   transform: translateX(-50%) translateY(-50%) scale(1);
 }
 
-.navigation-list__item:hover:after {
+.navigation-list__item:hover::after {
   opacity: 0.7;
   transform: translateX(-50%) translateY(-50%) scale(1.4);
 }
 
-/*==========================
+/* ==========================
       MEDIA QUERIES
  =========================== */
 @media all and (max-width: 500px) {
