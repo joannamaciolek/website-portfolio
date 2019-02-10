@@ -126,12 +126,7 @@ a.button {
   margin: 0 auto;
   text-align: left;
   position: relative;
-}
-
-.profile-text {
-  position: absolute;
-  margin-left: 55%;
-  margin-top: 5%;
+  padding: 40px;
 }
 
 .profile__portrait {
@@ -141,6 +136,7 @@ a.button {
   float: left;
   margin-right: 40px;
   box-shadow: 5px 5px 18px #000;
+  margin-bottom: 5%;
 }
 
 .profile__footer {
@@ -154,12 +150,13 @@ a.button {
   max-width: 700px;
   text-align: left;
   margin: 0 auto;
+  padding: 40px;
 }
 
 .about__table {
   text-align: center;
   border: 1px solid #fff;
-  width: 500px;
+  max-width: 500px;
   margin: 10px;
 }
 
@@ -183,10 +180,8 @@ img.page-header__item {
   margin: 10px;
 }
 
-.navigation-list {
-  background-color: #3ce3eb;
-  color: #fff;
-  list-style-type: none;
+#svg1287 {
+  max-width: 100%;
 }
 
 .contact {
@@ -229,7 +224,6 @@ input#submit__button {
   display: flex;
   width: 100%;
   padding: 20px;
-  justify-content: space-around;
 }
 
 .navigation-list,
@@ -238,9 +232,12 @@ input#submit__button {
 }
 
 .navigation-list {
-  flex-grow: 1;
+  display: flex;
   text-align: left;
-  margin: 0 auto;
+  margin-right: auto;
+  background-color: #3ce3eb;
+  color: #fff;
+  list-style-type: none;
 }
 
 .navigation-list__item {
@@ -374,7 +371,7 @@ input#submit__button {
 /* ==========================
       MEDIA QUERIES
  =========================== */
-@media all and (max-width: 500px) {
+@media all and (max-width: 600px) {
   .project-list {
     grid-template-columns: 1fr;
     grid-gap: 10px;
@@ -387,5 +384,15 @@ input#submit__button {
 
   h1 {
     font-size: 24px;
+  }
+
+  .navigation-list {
+    flex-direction: column;
+    margin-left: auto;
+  }
+
+  .navigation-list__item {
+    margin-top: 0;
+    padding: 3px;
   }
 }
