@@ -1,5 +1,5 @@
 body {
-  background-color: #3ce3eb;
+  background-color: #fff;
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
 }
@@ -150,12 +150,12 @@ a.button {
   max-width: 700px;
   text-align: left;
   margin: 0 auto;
-  padding: 40px;
+  padding: 0 40px;
 }
 
 .about__table {
   text-align: center;
-  border: 1px solid #fff;
+  border: 2px solid #e7e7e7;
   max-width: 500px;
   margin: 10px;
 }
@@ -163,7 +163,7 @@ a.button {
 .about__table__head {
   display: table-header-group;
   vertical-align: middle;
-  border: 1px solid #fff;
+  border: 2px solid #e7e7e7;
   font-variant: small-caps;
   font-size: 20px;
   font-weight: 700;
@@ -192,7 +192,7 @@ img.page-header__item {
 }
 
 form#contact-form {
-  margin: 10px;
+  margin: 10px 0;
   display: flex;
   flex-direction: column;
 }
@@ -235,8 +235,7 @@ input#submit__button {
   display: flex;
   text-align: left;
   margin-right: auto;
-  background-color: #3ce3eb;
-  color: #fff;
+  background-color: #fff;
   list-style-type: none;
 }
 
@@ -268,13 +267,13 @@ input#submit__button {
 }
 
 .project-list__item {
-  background-color: #fff;
+  background-color: #e7e7e7;
   padding: 10px;
   width: auto;
 }
 
 .project-list__item:last-child {
-  background-color: #ffebcd;
+  background-color: #b5e7a0;
 }
 
 /* ==========================
@@ -343,7 +342,7 @@ input#submit__button {
   left: 50%;
   width: 50px;
   height: 50px;
-  border: 4px solid #fff;
+  border: 4px solid #f6ac85;
   transform: translateX(-50%) translateY(-50%) scale(0.8);
   border-radius: 50%;
   background: transparent;
