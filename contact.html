@@ -39,21 +39,23 @@
         <a href="mailto:joanna.maciolek@gmail.com"><br>
           <h2>Contact me!</h2>
         </a>
-
       </div>
     </div>
     <div class="contact-box">
       <form action="#" method="post" id="contact-form">
-        <label class="standard-label" for="contact-email">Email*: </label>
-        <input type="email" id="contact-email" required>
-
-        <label class="standard-label" for="contact-tel">Telephone: </label>
-        <input type="tel" id="contact-tel">
-
-        <label class="standard-label" for="contact-message">Message*: </label>
-        <textarea maxlength="240" id="contact-message" placeholder="(max 240 characters)" required></textarea>
-
-        <input id="submit__button" type="submit" value="Send message">
+        <div class="input-wrapper">
+          <label class="standard-label" for="contact-email">Email: </label>
+          <input type="email" id="contact-email" required>
+        </div>
+        <div class="input-wrapper">
+          <label class="standard-label" for="contact-tel">Telephone: </label>
+          <input type="tel" id="contact-tel">
+        </div>
+        <div class="input-wrapper">
+          <label class="standard-label" for="contact-message">Message*: </label>
+          <textarea maxlength="240" id="contact-message" placeholder="(max 240 characters)" required></textarea>
+        </div>
+        <button id="submit__button" type="submit"> Send message</button>
       </form>
     </div>
   </div>
@@ -63,6 +65,7 @@
     <a href="#"> <img class="social-logos" src="img/twitter.svg" alt="Twitter"></a>
     <a href="https://www.linkedin.com/in/joanna-maciolek-b936453/" target="_blank"> <img class="social-logos" src="img/linkedin.svg" alt="LinkedIn"></a>
   </footer>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

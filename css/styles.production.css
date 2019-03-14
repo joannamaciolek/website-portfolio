@@ -191,24 +191,43 @@ img.page-header__item {
   margin: 0 auto;
 }
 
+label {
+  display: inline-block;
+  min-width: 100px;
+}
+
+input,
+textarea {
+  min-width: 300px;
+}
+
+.input-wrapper {
+  margin-bottom: 10px;
+}
+
 form#contact-form {
   margin: 10px 0;
   display: flex;
   flex-direction: column;
 }
 
-input#submit__button {
-  width: 150px;
-  height: auto;
+button#submit__button {
+  width: 134px;
+  height: 30;
   border-radius: 5px;
-  margin: 5px;
   font-family: inherit;
-  font-size: 100%;
+  font-size: 95%;
   background-color: #f6ac85;
   color: #fff;
   text-decoration: none;
-  padding: 10px;
+  padding: 5px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+}
+
+.error-message {
+  color: red;
+  font-size: 85%;
 }
 
 * {
